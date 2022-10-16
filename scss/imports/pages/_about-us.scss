@@ -1,0 +1,39 @@
+.opening {
+    background-color: #282828;
+    padding: 80px 0;
+    margin-bottom: 50px;
+    position: relative;
+    &::before  {
+        content: '';
+        background-image: url(/img/x.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        position: absolute;
+        top: 0;
+        right: 10%;
+        width: 100%;
+        height: 100%;
+    }
+    .container {
+        position: relative;
+        z-index: 9;
+        .about-text {
+            font-size: 18px;
+            font-family: "Myriad Pro";
+            color: rgb(228, 228, 228);
+            line-height: 2.222;
+            text-align: left;
+            max-width: 900px;
+            margin-bottom: 30px;
+        }
+        .button-book {
+            margin: 0;
+            @include flex (unset, flex-start);
+            button {
+                margin: 0 20px 0 0  ;
+
+            }
+        }
+
+    }
+}

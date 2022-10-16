@@ -1,0 +1,59 @@
+.line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.studio-title {
+  font-size: 12px;
+  font-family: "ProximaNova";
+  color: rgb(23, 23, 23);
+  text-align: center;
+  background-color: #ffde00;
+  p {
+    font-size: 40px;
+    font-family: "ProximaNova";
+    color: rgb(23, 23, 23);
+    font-weight: bold;
+    text-align: center;
+  }
+}
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  width: 100%;
+}
+.button-book {
+  img {
+      margin: auto;
+  }
+  button {
+      display: block;
+      margin: 30px auto;
+      padding: 20px;
+      background: #525355;
+      border-radius: 10px;
+      border-width: 0;
+      p {
+          max-width: 65px;
+          font-size: 24px;
+          font-family: "ProximaNova";
+          color: rgb(255, 222, 0);
+          text-transform: uppercase;
+          line-height: 1.27;
+          text-align: center;
+      }
+  }    
+}
+.--margin-header {
+  margin-bottom: 70px;
+}
+.--center {
+  margin: auto;
+  width: 50%;
+  background-color: #ffde00;
+}

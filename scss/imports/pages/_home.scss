@@ -1,0 +1,75 @@
+.intro {
+  .container {
+    text-align: center;
+    h1 {
+      width: 80px;
+      margin: auto;
+    }
+    h2 {
+      line-height: 1.524;
+      background-color: yellow;
+      color: rgb(82, 83, 85);
+      width: max-content;
+      margin: 20px auto;
+    }
+    p {
+      max-width: 750px;
+      margin: auto;
+    }
+    .line {
+      display: block;
+      height: 1px;
+      width: 35%;
+      margin: 50px auto;
+      background-color: black;
+    }
+  }
+}
+.project {
+  .container {
+    .title {
+      @include flex(center, center);
+      margin-bottom: 30px;
+
+      a {
+        margin: 0 20px;
+        &.active,
+        &:hover {
+          color: #f41616;
+        }
+      }
+    }
+    .list-project {
+      @include flex(space-between, baseline);
+      flex-wrap: wrap;
+      gap: 30px;
+      .project-item {
+        opacity: 0;
+        transform: translateY(60px);
+        // height: 0;
+        // display: block;
+        // overflow: hidden;
+        // width: 0;
+        img {
+          margin-bottom: 30px;
+        }
+        .info {
+          text-align: center;
+          h4 {
+            color: black;
+          }
+        }
+      }
+    }
+    .more-info {
+      margin: 50px auto;
+      max-width: max-content;
+      a {
+        margin-bottom: 30px;
+      }
+      img {
+        margin: auto;
+      }
+    }
+  }
+}

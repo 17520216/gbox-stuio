@@ -1,0 +1,125 @@
+.container {
+  &.studio-rental {
+    @include flex(unset, flex-start);
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    .textarea {
+      width: 100%;
+      resize: none;
+    }
+    .heading {
+      width: 25%;
+      padding: 60px 60px 200px 20px;
+      background-color: #525355;
+      .studio-title {
+        padding: 30px;
+        width: max-content;
+        font-size: 15px;
+        p {
+          font-size: 60px;
+        }
+      }
+      .rental-text {
+        font-size: 12px;
+        font-family: "ProximaNova";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 2.54;
+        text-align: left;
+      }
+      .main-title {
+        font-size: 32px;
+        font-family: "ProximaNova";
+        color: rgb(255, 255, 255);
+        line-height: 0.953;
+        text-align: left;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+    }
+    .detail-title {
+      font-size: 28px;
+      font-family: "ProximaNova";
+      color: rgb(57, 56, 47);
+      line-height: 1.089;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .detail-text {
+      font-size: 12px;
+      font-family: "ProximaNova";
+      color: rgb(23, 23, 23);
+      line-height: 3;
+    }
+    .detail {
+      padding: 60px;
+      width: 100%;
+      .company-detail {
+        margin-bottom: 50px;
+        .company-form {
+          @include flex(unset, baseline);
+          .left,
+          .right {
+            width: 30%;
+            margin-right: 75px;
+          }
+        }
+      }
+      .booking-detail {
+        .studio-button {
+          margin-bottom: 30px;
+          button {
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid black;
+            text-align: center;
+            width: 39px;
+            height: 39px;
+            color: white;
+            background-color: black;
+          }
+        }
+        .catering {
+          @include flex(unset, baseline);
+        }
+        .catering > div {
+          width: 30%;
+          margin-right: 75px;
+        }
+        .booking > div {
+          @include flex(space-between, center);
+          width: 75%;
+        }
+        .booking > div > input {
+          width: 40%;
+        }
+        .booking > div > img {
+          transform: rotate(-90deg);
+        }
+        input {
+          border: 1px solid black;
+          padding: 5px;
+          width: 75%;
+        }
+        .button-book {
+          @include flex(unset, flex-start);
+          padding-top: 50px;
+          button {
+            margin: 0 20px 0 0;
+            padding: 40px 15px;
+            font-size: 24px;
+            font-family: "ProximaNova";
+            color: rgb(255, 222, 0);
+            text-transform: uppercase;
+            line-height: 1.27;
+            text-align: center;
+          }
+          p {
+            max-width: 200px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+}

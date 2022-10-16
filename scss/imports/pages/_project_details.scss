@@ -1,0 +1,53 @@
+.project-details {
+    .container {
+        .title {
+            font-size: 14px;
+            font-family: "ProximaNova";
+            color: rgb(23, 23, 23);
+            text-transform: uppercase;
+            line-height: 1.571;
+            margin-bottom: 10px
+        }
+        .heading {
+            @include flex (space-between, center );
+            padding: 20px 0;
+            .title {
+                margin-bottom: 0;
+            }
+            .button {
+                @include flex (space-between,center);
+                .back-to-all {
+                    margin-left: 50px;
+                    .arrow {
+                        width: unset;
+                        transform: rotate(90deg);
+                        margin-left: 10px;
+                    }
+                }
+                .fullscreen {
+                    width: 14px;
+                    height: 14px;
+                    margin-left: 25px;
+                }
+            }
+            button {
+                border: none;
+                background-color: transparent;
+                @include flex (space-between,center);
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .info {
+            @include flex (space-between,flex-start);
+            padding: 50px 0;
+            .description {
+                width: 35%;
+                p {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

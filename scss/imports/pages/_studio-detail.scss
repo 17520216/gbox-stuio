@@ -1,0 +1,120 @@
+.banner {
+    .container {
+        .button-back {
+            @include flex(end, center);
+            margin-bottom: 30px;
+            svg {
+                width: 18px;
+                height: 18px;
+                margin-left: 20px;
+                transform: rotate(90deg);
+            }
+        }
+        .main-img {
+            width: 100%;
+        }
+        .detail {
+            @include flex(unset, flex-start);
+            .studio-title {
+                margin-left: 20px;
+                padding: 20px;
+            }
+            .more-detail {
+                @include flex(space-between, baseline);
+                padding: 25px;
+                width: 100%;
+                margin-bottom: 50px;
+                .dimensions {
+                    font-size: 12px;
+                    font-family: "ProximaNova";
+                    color: rgb(46, 44, 44);
+                    text-transform: uppercase;
+                    line-height: 2.54;
+                    text-align: left;
+                    margin-left: 50px;
+                }
+                .function {
+                    @include flex(center, unset);
+                    img {
+                        margin-left: 20px;
+                    }
+                }
+                .button {
+                    @include flex(center, center);
+                    button {
+                        @include flex(center, center);
+                        margin: 0 15px 0 0;
+                        border: none;
+                        background: none;
+                    }
+                    .prev {
+                        flex-direction: row-reverse;
+                        img {
+                            transform: rotate(90deg);
+                            margin-right: 10px;
+                        }
+                    }
+                    .next {
+                        img {
+                            transform: rotate(-90deg);
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.price-title {
+    font-size: 32px;
+    font-family: "ProximaNova";
+    color: rgb(57, 56, 47);
+    line-height: 0.953;
+    text-align: left;
+    font-weight: bold;
+}
+.price {
+    .container {
+        @include flex(unset, baseline);
+        .pricing {
+            width: 50%;
+            .price-info {
+                max-width: 80%;
+                width: 100%;
+                margin: 30px 0;
+            }
+            .price-item {
+                border: 1px solid black;
+                padding: 15px 30px;
+                width: 90%;
+                @include flex(space-between, center);
+                &:nth-child(4) {
+                    border-top: none;
+                }
+            }
+        }
+        .floorplan {
+            img {
+                padding-top: 90px;
+            }
+        }
+    }
+}
+.specs {
+    .container {
+        .specs-detail {
+            @include flex(unset, baseline);
+            margin: 30px 0;
+            p {
+                font-size: 14px;
+                font-family: "Myriad Pro";
+                color: rgb(26, 26, 26);
+                line-height: 2.5;
+                text-align: left;
+            }
+            .left {
+                width: 50%;
+            }
+        }
+    }
+}

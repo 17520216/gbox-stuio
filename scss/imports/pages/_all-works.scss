@@ -1,0 +1,23 @@
+.more-info-work {
+    @include flex (space-between, flex-start);
+    margin: 50px 0;
+    position: relative;
+    .button-book {
+        @include flex (unset,flex-start);
+        flex-direction: row-reverse;
+        button {
+            margin: 0;
+        }
+        .detail-text {
+            max-width: 130px;
+        }
+    }
+    .more {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        img {
+            margin: 15px auto;
+        }
+    }
+}

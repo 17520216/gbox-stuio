@@ -1,0 +1,43 @@
+.studio {
+    .container {
+        @include flex(space-between, center);
+        flex-wrap: wrap;
+        gap: 50px 0;
+        svg {
+            width: 21px;
+            height: 21px;
+            color: white;
+            margin: 5px 20px;
+        }
+        .studio-title {
+            padding: 20px;
+        }
+        .studio-text {
+            font-size: 12px;
+            font-family: "ProximaNova";
+            color: rgb(234, 234, 234);
+            text-transform: uppercase;
+            line-height: 1.8;
+            text-align: center;
+        }
+        .item {
+            width: 485px;
+            border: 1px solid transparent;
+            gap: 30px 0;
+            img{
+                width: 100%;
+            }
+            .studio-info {
+                @include flex(left, flex-start);
+                height: 100px;
+                overflow: hidden;
+                .wrap-dimension {
+                    background-color: #525355;
+                    padding: 20px 50px;
+                    @include flex(space-between, flex-start);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
